@@ -28,7 +28,7 @@ resource "azurerm_mysql_database" "mysql_db" {
   name                = var.db_name
   resource_group_name = azurerm_resource_group.rg.name
   server_name         = azurerm_mysql_server.mysql_server.name
-  charset             = "utf8"
-  collation           = "utf8_unicode_ci"
+  charset             = var.db_charset
+  collation           = var.db_collation
 }
 

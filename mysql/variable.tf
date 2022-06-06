@@ -56,8 +56,6 @@ variable "version" {
   defdefault  = "5.7"
 }
 
-####
-
 variable "auto_grow" {
   description = "Database server auto_grow"
   type        = bool
@@ -97,4 +95,16 @@ variable "ssl_minimal_tls" {
   description = "Database server ssl_minimal_tls_version_enforced  "
   type        = string
   defdefault  = "TLS1_2"
+}
+
+variable "db_charset" {
+  description = "Database charset "
+  type        = string
+  defdefault  = "utf8"
+}
+
+variable "db_collation" {
+  description = "Database collation "
+  type        = string
+  defdefault  = "utf8_unicode_ci"
 }

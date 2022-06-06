@@ -14,4 +14,6 @@ geo_redundant_backup      = true
 infrastructure_encryption = true
 public_net_access         = false
 ssl_enforcement           = true
-ssl_minimal_tls           = "TLS1_2" 
+ssl_minimal_tls           = "TLS1_2"
+db_charset                = "utf8"
+db_collation              = "utf8_unicode_ci"
