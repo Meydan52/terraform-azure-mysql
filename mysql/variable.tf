@@ -10,3 +10,9 @@ variable "region" {
   default     = "West Europe"
 }
 
+variable "server_name" {
+  description = "Server name"
+  type        = string
+  default     = ""
+  
+}
