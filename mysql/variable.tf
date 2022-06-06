@@ -52,7 +52,7 @@ variable "storage_mb" {
   default     = 5120
 }
 
-variable "version" {
+variable "server_version" {
   description = "Database server version  "
   type        = string
   default     = "5.7"
@@ -114,7 +114,7 @@ variable "db_collation" {
 variable "firewall_rule_name" {
   description = "database firewall rule name "
   type        = string
-  default     = "${var.rg_name}-${var.db_name}_asg_firewall_rule"
+  default     = "database_asg_firewall_rule"
 }
 
 variable "asg_ip" {
