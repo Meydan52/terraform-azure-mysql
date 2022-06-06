@@ -21,102 +21,104 @@ variable "db_name" {
   type        = string
   default     = "exampledb"
 }
+/*
 variable "vnet_rule" {
   description = "virtual network rule"
   type        = string
-  defdefault  = ""
+  default  = ""
 }
+*/
 
 variable "db_admin" {
   description = "Database server admin username"
   type        = string
-  defdefault  = ""
+  default     = ""
 }
 variable "db_password" {
   description = "Database server admin password"
   type        = string
-  defdefault  = ""
+  default     = ""
 }
 
 variable "sku_name" {
   description = "Database server sku_name "
   type        = string
-  defdefault  = "GP_Gen5_2"
+  default     = "GP_Gen5_2"
 }
 
 variable "storage_mb" {
   description = "Database server storage_mb "
   type        = number
-  defdefault  = 5120
+  default     = 5120
 }
 
 variable "version" {
   description = "Database server version  "
   type        = string
-  defdefault  = "5.7"
+  default     = "5.7"
 }
 
 variable "auto_grow" {
   description = "Database server auto_grow"
   type        = bool
-  defdefault  = true
+  default     = true
 }
 variable "backup_retention_days" {
   description = "Database server backup_retention_days"
   type        = number
-  defdefault  = 7
+  default     = 7
 }
 
 variable "geo_redundant_backup" {
   description = "Database server geo_redundant_backup-enabled "
   type        = bool
-  defdefault  = true
+  default     = true
 }
 
 variable "infrastructure_encryption" {
   description = "Database server infrastructure_encryption "
   type        = bool
-  defdefault  = true
+  default     = true
 }
 
 variable "public_net_access" {
   description = "Database server public_network_access_enabled   "
   type        = bool
-  defdefault  = false
+  default     = false
 }
 
 variable "ssl_enforcement" {
   description = "Database server ssl_enforcement_enabled  "
   type        = bool
-  defdefault  = true
+  default     = true
 }
 
 variable "ssl_minimal_tls" {
   description = "Database server ssl_minimal_tls_version_enforced  "
   type        = string
-  defdefault  = "TLS1_2"
+  default     = "TLS1_2"
 }
 
 variable "db_charset" {
   description = "Database charset "
   type        = string
-  defdefault  = "utf8"
+  default     = "utf8"
 }
 
 variable "db_collation" {
   description = "Database collation "
   type        = string
-  defdefault  = "utf8_unicode_ci"
+  default     = "utf8_unicode_ci"
 }
 
 variable "firewall_rule_name" {
   description = "database firewall rule name "
   type        = string
-  defdefault  = "${var.rg_name}-${var.db_name}_asg_firewall_rule"
+  default     = "${var.rg_name}-${var.db_name}_asg_firewall_rule"
 }
 
 variable "asg_ip" {
   description = "IP address of the resource to have access to database  "
   type        = string
-  defdefault  = ""
+  default     = ""
 }
