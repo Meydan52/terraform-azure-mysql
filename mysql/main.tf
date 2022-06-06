@@ -4,16 +4,6 @@ resource "azurerm_resource_group" "rg" {
   location = var.region
 }
 
-/*
-resource "azurerm_storage_account" "example" {
-  name                     = "examplesa"
-  resource_group_name      = azurerm_resource_group.example.name
-  location                 = azurerm_resource_group.example.location
-  account_tier             = "Standard"
-  account_replication_type = "LRS"
-}
-*/
-
 resource "azurerm_mssql_server" "mysql_server" {
   name                         = var.server_name
   resource_group_name          = azurerm_resource_group.rg.name
