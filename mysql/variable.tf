@@ -16,3 +16,8 @@ variable "server_name" {
   default     = ""
   
 }
+variable "mysql_db" {
+  description = "mysql db"
+  type        = string
+  default     = ""
+}
