@@ -21,3 +21,8 @@ variable "mysql_db" {
   type        = string
   default     = ""
 }
+variable "vnet_rule" {
+  description = "virtual network rule"
+  type        = string
+  defdefault = ""  
+}
