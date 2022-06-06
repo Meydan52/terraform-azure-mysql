@@ -4,6 +4,7 @@ resource "azurerm_resource_group" "rg" {
   location = var.region
 }
 
+# Create MYSQL server for databse
 resource "azurerm_mysql_server" "mysql_server" {
   name                         = var.server_name
   resource_group_name          = azurerm_resource_group.rg.name
@@ -24,6 +25,7 @@ resource "azurerm_mysql_server" "mysql_server" {
   ssl_minimal_tls_version_enforced  = var.ssl_minimal_tls
 }
 
+# Create and database
 resource "azurerm_mysql_database" "mysql_db" {
   name                = var.db_name
   resource_group_name = azurerm_resource_group.rg.name
@@ -32,3 +34,11 @@ resource "azurerm_mysql_database" "mysql_db" {
   collation           = var.db_collation
 }
 
+# Config MySQL Server Firewall Rule for ASG
+resource "azurerm_mysql_firewall_rule" "ASG" {
+  name                = var.firewall_rule_name
+  resource_group_name = azurerm_resource_group.rg.name
+  server_name         = azurerm_mysql_server.mysql_server.name
+  start_ip_address    = var.asg_ip
+  end_ip_address      = var.asg_ip
+}

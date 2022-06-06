@@ -108,3 +108,15 @@ variable "db_collation" {
   type        = string
   defdefault  = "utf8_unicode_ci"
 }
+
+variable "firewall_rule_name" {
+  description = "database firewall rule name "
+  type        = string
+  defdefault  = "${var.rg_name}-${var.db_name}_asg_firewall_rule"
+}
+
+variable "asg_ip" {
+  description = "IP address of the resource to have access to database  "
+  type        = string
+  defdefault  = ""
+}

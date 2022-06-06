@@ -17,3 +17,5 @@ ssl_enforcement           = true
 ssl_minimal_tls           = "TLS1_2"
 db_charset                = "utf8"
 db_collation              = "utf8_unicode_ci"
+firewall_rule_name        = "firewall_rule_for_asg"
+asg_ip                    = ""
