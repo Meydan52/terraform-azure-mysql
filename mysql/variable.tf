@@ -1,7 +1,7 @@
-variable "rgrp_name" {
+variable "rg_name" {
   description = "Resource group name"
   type        = string
-  default     = "my_rgrp"
+  default     = "my_rg"
 }
 
 variable "region" {
@@ -10,8 +10,3 @@ variable "region" {
   default     = "West Europe"
 }
 
-variable "vnet_name" {
-  description = "Region"
-  type        = string
-  default     = "West Europe"
-}
