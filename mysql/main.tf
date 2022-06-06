@@ -25,7 +25,7 @@ resource "azurerm_mssql_server" "mysql_server" {
 }
 
 resource "azurerm_mysql_database" "mysql_db" {
-  name                = "exampledb"
+  name                = var.mysql_db
   resource_group_name = azurerm_resource_group.example.name
   server_name         = azurerm_mysql_server.example.name
   charset             = "utf8"
