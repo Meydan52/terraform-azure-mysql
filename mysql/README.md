@@ -1,9 +1,13 @@
-# terraform-project-azure
+# Terraform-Azure-Project
 
+## Instructions on how to create Azure MySQL 
 
+###  Create the resource group
+###  Create MySQL server for database
+###  Create database
+###  Config MySQL Server Firewall Rule to be accessed
+###  Set Variables for dynamic values
 
-### server_name
-"name" can contain only lowercase letters, numbers, and '-', but can't start or end with '-', and must be at least 3 characters and no more than 63 characters long.
+```
 
-### public_net_access
-it should be public_net_access  = true
+```
