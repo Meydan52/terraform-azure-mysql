@@ -1,5 +1,5 @@
 module "azure_mysql_database" {
-source = ""
+source  = "3latanova/mysql-database/project"
 rg_name                   = "rg_mysql_db_test2"
 rg_region                 = "West Europe"
 server_name               = "test-server-453235dsdf34534"
