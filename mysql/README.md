@@ -30,12 +30,12 @@ asg_ip                    = "10.0.3.123"
 
 }
 ```
-###  Create the resource group
-###  Create MySQL server for database
-###  Create database
-###  Config MySQL Server Firewall Rule to be accessed
-###  Set Variables for dynamic values
+###  Vareables have some default values. Those variables are below must be updated with values from your code respectively. 
 
-```
-
-```
+### Update these modules;
+#### rg_name     - resource group name,
+#### rg_region   - resource group location,
+#### server_name - proper mysql server name, 
+#### db_admin    - admin name,
+#### db_password - admin password,
+#### asg_ip      - ip address of the resource needs to connect to the database (ASG, VMs, .etc)
