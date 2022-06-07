@@ -9,6 +9,9 @@ resource "azurerm_resource_group" "rg" {
 
 # Create MYSQL server for database
 resource "azurerm_mysql_server" "mysql_server" {
+  depends_on = [
+    azurerm_resource_group.rg
+  ]
   name                         = var.server_name
   resource_group_name          = var.rg_name
   location                     = var.rg_region
