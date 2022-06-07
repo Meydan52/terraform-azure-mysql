@@ -4,7 +4,7 @@ resource "azurerm_resource_group" "rg" {
   location = var.region
 }
 
-# Create MYSQL server for databse
+# Create MYSQL server for database
 resource "azurerm_mysql_server" "mysql_server" {
   name                         = var.server_name
   resource_group_name          = azurerm_resource_group.rg.name
