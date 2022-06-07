@@ -4,8 +4,8 @@ variable "rg_name" {
   default     = "my_rg"
 }
 
-variable "region" {
-  description = "Region"
+variable "rg_region" {
+  description = "Resource group location"
   type        = string
   default     = "West Europe"
 }

@@ -1,5 +1,5 @@
 rg_name                   = "rg_mysql_db_test2"
-region                    = "West Europe"
+rg_region                    = "West Europe"
 server_name               = "test-server-453235dsdf34534"
 db_name                   = "db-example"
 db_admin                  = "mysqladminun"
