@@ -19,6 +19,6 @@ ssl_minimal_tls           = "TLS1_2"
 db_charset                = "utf8"
 db_collation              = "utf8_unicode_ci"
 firewall_rule_name        = "firewall_rule_for_asg"
-asg_ip                    = "10.0.3.123"
+asg_ip                    = "0.0.0.0"
   
 }
