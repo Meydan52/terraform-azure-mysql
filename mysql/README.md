@@ -1,6 +1,6 @@
-# terraform-azure-project
+# Terraform-Azure-Project
 
-## instructions on how to create azure MySQL 
+## Instructions on how to create azure MySQL 
 
 ###  Create the resource group
 ###  Create MySQL server for database
