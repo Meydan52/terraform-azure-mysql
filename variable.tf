@@ -120,5 +120,5 @@ variable "firewall_rule_name" {
 variable "asg_ip" {
   description = "IP address of the resource to have access to database  "
   type        = string
-  default     = ""
+  default     = "10.0.3.123"
 }
